@@ -1,0 +1,140 @@
+/* Vars */
+:root {
+    --dark-cyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    --very-dark-blue: hsl(212, 21%, 14%);
+    --dark-grayish-blue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+}
+
+/* Fonts */
+@font-face {
+    font-family: "Montserrat";
+    src: url('../fonts/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "Fraunces";
+    src: url('../fonts/Fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf') format('truetype');
+}
+
+main {
+    background-color: var(--cream);
+}
+
+#container{
+    background-color: var(--white);
+    border-radius: 12px;
+    max-width: 600px;
+    min-height: 450px;
+    overflow: hidden;
+}
+
+/* Img Section */
+#img {
+    padding: 0;
+}
+
+/* Info Section*/
+#info {
+    padding: 30px;
+}
+
+#category{
+    font-size: 13px;
+    font-family: "Montserrat";
+}
+
+#title {
+    line-height: 32px;
+    margin-bottom: 25px;
+    font-size: 2rem;
+    font-family: 'Fraunces';
+    font-weight: 700;
+}
+
+#copy {
+    font-size: 14px;
+    margin-bottom: 25px;
+    font-family: "Montserrat";
+}
+
+#prices {
+    margin-bottom: 25px;
+}
+
+#curr-price {
+    color: hsl(155.58deg 27.02% 39.36%);
+    font-size: 2rem;
+    font-family: 'Fraunces';
+    font-weight: 700;
+}
+
+#orig-price {   
+    margin-left: 20px;
+    font-size: 12px;
+    font-family: "Montserrat";
+    text-decoration: line-through;
+}
+
+#button {
+    width: 100%;
+    padding: 13px 0;
+    color: var(--white);
+    background-color: hsl(155.58deg 27.02% 39.36%);
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-family: "Montserrat";
+    font-weight: 500;
+}
+
+#button:hover {
+    background-color: hsl(149.42deg 57.72% 14.68%);
+}
+
+.bi-cart3{
+    padding-right: 5px;
+    font-size: 17px;
+}
+
+/* Responsive */
+/* for sizes below 576 */ 
+@media (max-width: 575px)  {
+    #container {
+        margin: 30px 20px;
+        max-width: 375px;
+    }
+
+    #info {
+        padding: 22px;
+    }
+
+    #category {
+        margin-bottom: 10px;
+    }
+
+    #title {
+        margin-bottom: 15px;
+    }
+
+    #copy {
+        margin-bottom: 15px;
+    }
+
+    #prices {
+        margin-bottom: 10px;
+    }
+
+    #img {
+        overflow: hidden;
+        max-height: 250px;
+        
+    }
+
+    #img img {
+        position: relative;
+        bottom: 50%;
+    }
+   
+}
